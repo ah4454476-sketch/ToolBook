@@ -1,0 +1,100 @@
+
+#death-time-estimator {
+  width: 100%;
+  max-width: 550px;
+  margin: 15px auto;
+  background: #fff;
+  border: 2px solid #b51000;
+  border-radius: 10px;
+  padding: 18px;
+  color: #222;
+  box-sizing: border-box;
+}
+
+#death-time-estimator * {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#death-time-estimator h3 {
+  color: #b51000;
+  text-align: center;
+  margin: 0 0 14px;
+  font-size: 1.2rem;
+}
+
+#death-time-estimator label {
+  display: block;
+  margin: 8px 0 4px;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+#death-time-estimator select,
+#death-time-estimator input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+#death-time-estimator .dob-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: 8px;
+}
+
+#death-time-estimator button {
+  width: 100%;
+  background: #b51000;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#death-time-estimator button:hover {
+  opacity: 0.9;
+}
+
+#death-time-estimator .result {
+  margin-top: 12px;
+  padding: 10px;
+  border-top: 1px solid #eee;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+#death-time-estimator .muted {
+  font-size: 0.85rem;
+  color: #666;
+  text-align: center;
+  margin-top: 8px;
+}
+
+/* Responsive tweaks for any screen */
+@media (max-width: 480px) {
+  #death-time-estimator {
+    padding: 12px;
+    border-width: 1.5px;
+  }
+  #death-time-estimator h3 {
+    font-size: 1.05rem;
+  }
+  #death-time-estimator label {
+    font-size: 0.9rem;
+  }
+  #death-time-estimator select,
+  #death-time-estimator input {
+    font-size: 0.9rem;
+    padding: 7px;
+  }
+  #death-time-estimator button {
+    font-size: 0.95rem;
+    padding: 9px;
+  }
+}
