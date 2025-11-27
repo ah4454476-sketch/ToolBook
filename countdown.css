@@ -1,0 +1,84 @@
+.timer-box {
+  text-align:center;
+  margin:20px auto;
+  padding:20px;
+  background:#b51200;
+  border-radius:15px;
+  box-shadow:0 0 10px rgba(0,0,0,0.08);
+  max-width:520px;
+  font-family:'Poppins', sans-serif;
+  box-sizing:border-box;
+}
+.timer-box h2 {
+  margin-bottom:15px;
+  color:#fff;
+  font-size:20px;
+  line-height:1.3;
+}
+.timer-box p {
+  margin-bottom:15px;
+  color:yellow;
+  font-size:15px;
+  line-height:1.3;
+}
+.cDown {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:nowrap;
+  gap:10px;
+}
+.cdBox {
+  background:#fff;
+  color:#b51000;
+  border-radius:8px;
+  padding:10px 12px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  min-width:65px;
+  box-shadow:0 0 6px rgba(0,0,0,0.15);
+  flex:1 1 0;
+  box-sizing:border-box;
+}
+.cdBox b {
+  font-size:20px;
+  font-weight:600;
+  line-height:1;
+}
+.cdBox small {
+  font-size:12px;
+  margin-top:3px;
+}
+
+/* ✅ Greeting Style */
+.greeting {
+  color:#fff;
+  font-size:22px;
+  font-weight:600;
+  text-shadow:0 0 6px rgba(255,255,255,0.7);
+}
+
+/* ✅ Responsive adjustments */
+@media(max-width:480px){
+  .timer-box {padding:15px;}
+  .cDown {gap:6px;}
+  .cdBox{padding:8px 8px;min-width:55px;}
+  .cdBox b{font-size:17px;}
+  .cdBox small{font-size:10px;}
+}
+@media(max-width:360px){
+  .cDown {gap:4px;}
+  .cdBox{padding:6px 6px;min-width:45px;}
+  .cdBox b{font-size:14px;}
+  .cdBox small{font-size:9px;}
+  .timer-box h2{font-size:16px;}
+}
+@media(max-width:300px){
+  .cDown {gap:3px;}
+  .cdBox{padding:5px 4px;min-width:40px;}
+  .cdBox b{font-size:12px;}
+  .cdBox small{font-size:8px;}
+  .timer-box h2{font-size:14px;}
+}
