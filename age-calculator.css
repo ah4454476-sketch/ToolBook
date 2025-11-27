@@ -1,0 +1,63 @@
+/* Scope everything inside the post-age-calculator class */
+.post-age-calculator {
+  max-width: 450px;
+  margin: 20px auto 50px auto;
+  padding: 25px;
+  background: #fff8f8;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(128,0,0,0.2);
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.post-age-calculator h2 {
+  text-align: center;
+  font-size: 1.7em;
+  margin-bottom: 25px;
+  color: #800000;
+}
+
+.post-age-calculator .container {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.post-age-calculator select {
+  padding: 10px 14px;
+  font-size: 15px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+.post-age-calculator select:focus {
+  border-color: #800000;
+  outline: none;
+  box-shadow: 0 0 6px rgba(128,0,0,0.3);
+}
+
+.post-age-calculator button {
+  padding: 12px 24px;
+  background: #800000; /* maroon */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-bottom: 25px;
+}
+
+.post-age-calculator button:hover {
+  background: #660000; /* darker maroon */
+}
+
+.post-age-calculator .result {
+  font-size: 18px;
+  color: #800000; /* maroon to match theme */
+  margin-top: 15px;
+}
