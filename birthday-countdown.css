@@ -1,0 +1,103 @@
+
+  .birthday-countdown {
+  text-align: center;
+  border: 2px solid #ddd;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px auto;
+  max-width: 600px;
+  background: linear-gradient(135deg, #550000, #880000);
+  color: white;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* Title */
+.birthday-countdown h2 {
+  font-size: clamp(1.2rem, 4vw, 2rem);
+  margin-bottom: 15px;
+  color: yellow;
+}
+
+/* Dropdowns */
+.selectors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.selectors label {
+  font-size: clamp(0.8rem, 2.5vw, 1rem);
+  margin: 2px 0;
+}
+
+.selectors select {
+  padding: 5px 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: clamp(0.8rem, 2.5vw, 1rem);
+  background: #fff;
+  color: #333;
+  width: clamp(80px, 25vw, 140px); /* 👈 scales responsively */
+  max-width: 100%;
+}
+
+/* Countdown time boxes */
+.time-boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.time-box {
+  background: rgba(255,255,255,0.1);
+  border-radius: 10px;
+  padding: clamp(10px, 2vw, 18px);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.time-box:hover {
+  transform: scale(1.05);
+}
+
+.number {
+  display: block;
+  font-size: clamp(1.2rem, 6vw, 2.5rem);
+  font-weight: bold;
+}
+
+.label {
+  display: block;
+  font-size: clamp(0.7rem, 3vw, 1rem);
+  margin-top: 5px;
+}
+
+/* Cake */
+#cake {
+  margin-top: 20px;
+  font-size: clamp(1.5rem, 6vw, 2.5rem);
+}
+
+.hidden {
+  display: none;
+}
+
+/* Extra small screens */
+@media (max-width: 400px) {
+  .selectors {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .selectors select {
+    width: 100%; /* full width on very small screens */
+  }
+
+  .time-boxes {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row */
+  }
+}
