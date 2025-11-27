@@ -1,0 +1,84 @@
+
+.img-converter {
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fafafa;
+  box-sizing: border-box;
+}
+
+.img-converter h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.img-converter p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.img-converter input[type="file"],
+.img-converter select {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 95%;
+  max-width: 320px;
+  font-size: 1rem;
+}
+
+.img-converter button {
+  padding: 12px 20px;
+  border: none;
+  background: #400000;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 320px;
+  transition: background 0.3s;
+}
+
+.img-converter button:hover {
+  background: #990000;
+}
+
+.img-converter canvas {
+  display: none;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  .img-converter {
+    padding: 15px;
+  }
+  .img-converter h2 {
+    font-size: 1.3rem;
+  }
+  .img-converter p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .img-converter {
+    padding: 10px;
+  }
+  .img-converter h2 {
+    font-size: 1.1rem;
+  }
+  .img-converter p {
+    font-size: 0.85rem;
+  }
+  .img-converter button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
