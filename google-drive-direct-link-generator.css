@@ -1,0 +1,94 @@
+    /* Scoped responsive styles for this post */
+    .link-generate-post {
+      font-family: 'Roboto Condensed', sans-serif;
+      max-width: 600px;
+      width: 95%;
+      margin: 20px auto;
+      padding: 15px;
+      background: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      box-sizing: border-box;
+    }
+
+    .link-generate-post .title {
+      font-size: 1.5em;
+      margin: 15px 0 10px;
+      text-align: left;
+    }
+
+    .link-generate-post .sub {
+      font-size: 0.75em;
+      color: #555;
+    }
+
+    .link-generate-post #button {
+      display: block;
+      font-family: 'Roboto Condensed', sans-serif;
+      font-size: 1em;
+      padding: 10px 20px;
+      margin: 15px auto;
+      border: none;
+      border-radius: 8px;
+      background: #800000; /* maroon */
+      color: #fff;
+      cursor: pointer;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+      transition: background 200ms, transform 100ms;
+      width: 100%;
+      max-width: 250px;
+      box-sizing: border-box;
+    }
+
+    .link-generate-post #button:hover {
+      background: #a00000;
+      transform: translateY(-2px);
+    }
+
+    .link-generate-post #button:active {
+      background: #5c0000;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+      transform: translateY(1px);
+    }
+
+    .link-generate-post #input,
+    .link-generate-post #output {
+      font-size: 1em;
+      display: block;
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+
+    .link-generate-post #output[disabled] {
+      background: #eee;
+    }
+
+    .link-generate-post #help-text {
+      font-weight: 600;
+      margin: 10px 0 0;
+      text-align: center;
+      word-break: break-word;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 480px) {
+      .link-generate-post .title {
+        font-size: 1.3em;
+      }
+
+      .link-generate-post #button {
+        font-size: 0.95em;
+        padding: 10px;
+        max-width: 100%;
+      }
+
+      .link-generate-post #input,
+      .link-generate-post #output {
+        font-size: 0.95em;
+        padding: 8px;
+      }
+    }
