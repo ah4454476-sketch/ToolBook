@@ -1,0 +1,25 @@
+
+  #bh-textcase-widget.bh-widget{max-width:900px;margin:18px auto;padding:14px;border:2px solid #b51200;border-radius:12px;background:linear-gradient(135deg,#ffe8e6,#fff);font-family:inherit;box-shadow:0 2px 8px rgba(0,0,0,0.08)}
+  #bh-textcase-widget .bh-title{font-size:1.3rem;margin:0 0 8px 0;color:#b51200;text-align:center}
+  #bh-textcase-widget .bh-textarea{width:100%;box-sizing:border-box;padding:12px;border-radius:8px;border:2px solid #f1c5c0;resize:vertical;min-height:160px;font-size:0.98rem;transition:border-color .3s,box-shadow .3s}
+  #bh-textcase-widget .bh-textarea:focus{border-color:#b51200;box-shadow:0 0 0 3px rgba(181,18,0,0.2);outline:none}
+  #bh-textcase-widget .bh-buttons{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+  #bh-textcase-widget .bh-buttons button{flex:1 1 calc(33.333% - 10px);min-width:120px;padding:10px 12px;border-radius:8px;border:none;color:#fff;cursor:pointer;font-weight:600;transition:background-color .25s,transform .1s}
+
+  /* Colorful button styles */
+  #bh-upper{background-color:#b51200}
+  #bh-lower{background-color:#00897b}
+  #bh-title{background-color:#1976d2}
+  #bh-paste{background-color:#8e24aa}
+  #bh-copy{background-color:#fbc02d;color:#000}
+  #bh-clear{background-color:#e53935}
+
+  #bh-textcase-widget .bh-buttons button:hover{filter:brightness(1.1)}
+  #bh-textcase-widget .bh-buttons button:active{transform:translateY(1px)}
+
+  #bh-textcase-widget .bh-status{font-size:0.9rem;margin-top:10px;min-height:20px;text-align:center;font-weight:600}
+  #bh-textcase-widget .bh-status.success{color:#00796b}
+  #bh-textcase-widget .bh-status.error{color:#b51200}
+
+  @media (min-width:720px){#bh-textcase-widget .bh-buttons button{padding:12px 14px}}
+  @media (max-width:520px){#bh-textcase-widget{padding:10px}#bh-textcase-widget .bh-buttons button{min-width:48%;flex:1 1 48%}}
