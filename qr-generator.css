@@ -1,0 +1,58 @@
+
+.qr-tool {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(180deg, #fffafa 0%, #ffecec 100%);
+  border: 2px solid #b51200;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  color: #333;
+  max-width: 400px;
+  margin: 10px auto;
+  box-shadow: 0 0 10px rgba(181, 18, 0, 0.2);
+  box-sizing: border-box;
+}
+.qr-tool h2 {
+  color: #b51200;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+.qr-tool input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #b51200;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+}
+.qr-tool button {
+  background: #b51200;
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+  margin-top: 5px;
+}
+.qr-tool button:hover {
+  background: #e01b00;
+}
+.qr-result img {
+  margin-top: 15px;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border: 2px solid #b51200;
+  border-radius: 10px;
+}
+#saveBtn {
+  display: none;
+  background: #000;
+}
+#saveBtn:hover {
+  background: #b52000;
+}
