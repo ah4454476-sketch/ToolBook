@@ -1,0 +1,56 @@
+
+#rbBox {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #b51000;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+}
+#rbBox h2 {
+    color: #b51000;
+    text-align: center;
+}
+#rbBox input {
+    width: 95%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #b51000;
+    border-radius: 5px;
+}
+#rbBox button {
+    width: 100%;
+    margin-top: 12px;
+    padding: 10px;
+    font-size: 16px;
+    background: #b51000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#rbBox button:hover {
+    background: #850c00;
+}
+#rbResult textarea {
+    width: 95%;
+    height: 220px;
+    margin-top: 15px;
+    font-size: 15px;
+    border: 1px solid #b51000;
+    border-radius: 5px;
+    padding: 10px;
+}
+.copyBtn {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    background: #b51000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.copyBtn:hover {
+    background: #850c00;
+}
